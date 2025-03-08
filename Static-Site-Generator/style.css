@@ -202,6 +202,47 @@ img {
 
 /* ==================== TEXT DECORATIONS */
 
+.p-highlight { color: var(--blue-400); font-weight: 400; }
+
 /* ==================== ANCHOR DECORATIONS */
 
+.anchor-blue {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    color: var(--blue-400);
+    font-weight: 400;
+}
+
+.anchor-blue:hover { 
+    text-decoration-thickness: 0.2rem;
+    color: var(--blue-500); 
+}
+
 /* ==================== HEADER ==================== */
+
+body {
+    margin: var(--gutter-col-2) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gutter-col-2)
+}
+
+header, footer { text-align: center; }
+
+main {
+    margin: 0 var(--gutter-col-padding); 
+    max-width: var(--breakpoint-12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gutter-col-1)
+}
+
+main video {
+    min-width: var(--image-col-4);
+    max-width: 80%;
+    height: auto; /* maintain aspect ratio */
+}
