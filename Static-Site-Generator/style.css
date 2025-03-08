@@ -219,6 +219,10 @@ body {
 
 header, footer { text-align: center; }
 
+header h1 { padding-bottom: var(--gutter-row-padding); }
+header p { color: var(--gray-700); }
+header a { text-decoration: underline; }
+
 main {
     margin: 0 var(--gutter-col-padding); 
     max-width: var(--breakpoint-12);
