@@ -119,6 +119,8 @@ h4 { font-size: 3rem; font-family: var(--ff-serif); line-height: 1; }
 h5 { font-size: 2.4rem; font-family: var(--ff-serif); line-height: 1; }
 h6 { font-size: 2rem; font-family: var(--ff-serif); line-height: 1; }
 
+h1, h2, h3, h4, h5, h6 { color: var(--blue-600); }
+
 a { cursor: pointer; }
 
 img {
@@ -170,25 +172,25 @@ img {
 
 .button {
     display: inline-block;
-    border: 0.1rem solid var(--gray-500);
+    border: 0.1rem solid var(--gray-600);
     border-radius: 0.5rem;
     padding: var(--gutter-row-padding) var(--gutter-col-padding);
 
+    box-shadow: 0px 6px 32px -10px var(--blue-600);
+    transition: background-color 200ms ease-in-out;
     background-color: var(--gray-300);
-    color: var(--gray-900);
+    color: var(--blue-600);
+
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-
-    box-shadow: 0px 6px 32px -10px var(--gray-300);
-    transition: background-color 200ms ease-in-out;
 }
 
 .button:hover {
-    border-color: var(--gray-900);
-    background-color: var(--green-400);
-    box-shadow: 0px 6px 32px -10px var(--green-400);
-    color: var(--gray-900);
+    box-shadow: 0px 6px 32px -10px var(--blue-900);
+    border-color: var(--blue-900);
+    background-color: var(--blue-600);
+    color: var(--gray-300);
 }
 
 .sr-only {
@@ -202,21 +204,7 @@ img {
 
 /* ==================== TEXT DECORATIONS */
 
-.p-highlight { color: var(--blue-400); font-weight: 400; }
-
-/* ==================== ANCHOR DECORATIONS */
-
-.anchor-blue {
-    text-decoration: underline;
-    text-decoration-thickness: 0.1rem;
-    color: var(--blue-400);
-    font-weight: 400;
-}
-
-.anchor-blue:hover { 
-    text-decoration-thickness: 0.2rem;
-    color: var(--blue-500); 
-}
+.highlight { color: var(--blue-400); }
 
 /* ==================== HEADER ==================== */
 
@@ -238,7 +226,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--gutter-col-1)
+    gap: var(--gutter-col-2)
 }
 
 main video {
